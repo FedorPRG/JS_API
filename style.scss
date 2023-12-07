@@ -1,0 +1,19 @@
+.container {
+  & img {
+    width: 350px;
+  }
+}
+.btn {
+  width: 100px;
+}
+.pagination {
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper {
+  align-self: center;
+  & i {
+    cursor: pointer;
+  }
+}
