@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/be17e9c03b.js" crossorigin="anonymous"></script>
+    <title>Бесклнечная лента с фотографиями</title>
+    <style>
+        #photo-container {
+            display: flex;
+            flex-wrap: wrap;
+            user-select: none;
+        }
+
+        .photo {
+            width: 300px;
+            margin: 10px;
+            border: 1px solid #ccc;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .photo img {
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="photo-container">
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
